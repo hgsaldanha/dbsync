@@ -137,7 +137,7 @@ public class DBSync {
 			throw new DBSyncDatabaseException("DBSync não carregado.");
 	}
 
-	public String syncronize() throws DBSyncDatabaseException {
+	public String synchronize() throws DBSyncDatabaseException {
 		if (status.equals(STATUS.PREPARADO)) {
 			if (!instructions.isEmpty()) {
 				target.createLogTable(LOGTABLE);
